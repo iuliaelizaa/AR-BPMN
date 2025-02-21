@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxGraphModel dx="1156" dy="694" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+    
+    <!-- Start Event -->
+    <mxCell id="startEvent" value="Start Event: FCA Uploaded" style="ellipse;whiteSpace=wrap;html=1;fillColor=green" vertex="1" parent="1">
+      <mxGeometry x="50" y="50" width="120" height="50" as="geometry"/>
+    </mxCell>
+
+    <!-- Process Steps -->
+    <mxCell id="E05" value="All invoices generated & transferred to AR" style="rounded=1;whiteSpace=wrap;html=1;fillColor=lightblue" vertex="1" parent="1">
+      <mxGeometry x="200" y="50" width="180" height="50" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="E07" value="Contract Approved (All Parties)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=lightblue" vertex="1" parent="1">
+      <mxGeometry x="400" y="50" width="180" height="50" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="A05" value="Revenue Generation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=lightblue" vertex="1" parent="1">
+      <mxGeometry x="600" y="50" width="180" height="50" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="A10" value="Create Accounting" style="rounded=1;whiteSpace=wrap;html=1;fillColor=lightblue" vertex="1" parent="1">
+      <mxGeometry x="800" y="50" width="180" height="50" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="A20" value="Run Manage Billing Offset" style="rounded=1;whiteSpace=wrap;html=1;fillColor=lightblue" vertex="1" parent="1">
+      <mxGeometry x="1000" y="50" width="200" height="50" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="A40" value="Create Accounting Transactions" style="rounded=1;whiteSpace=wrap;html=1;fillColor=lightblue" vertex="1" parent="1">
+      <mxGeometry x="1250" y="50" width="200" height="50" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="A45" value="Final Create Accounting" style="rounded=1;whiteSpace=wrap;html=1;fillColor=lightblue" vertex="1" parent="1">
+      <mxGeometry x="1500" y="50" width="200" height="50" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="A50" value="Export Revenue Distribution Report" style="rounded=1;whiteSpace=wrap;html=1;fillColor=lightblue" vertex="1" parent="1">
+      <mxGeometry x="1750" y="50" width="200" height="50" as="geometry"/>
+    </mxCell>
+
+    <!-- End Event -->
+    <mxCell id="endEvent" value="End Event: Revenue Generated" style="ellipse;whiteSpace=wrap;html=1;fillColor=red" vertex="1" parent="1">
+      <mxGeometry x="2000" y="50" width="150" height="50" as="geometry"/>
+    </mxCell>
+    
+    <!-- Connections -->
+    <mxCell id="edge1" edge="1" parent="1" source="startEvent" target="E05">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="edge2" edge="1" parent="1" source="E05" target="E07">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="edge3" edge="1" parent="1" source="E07" target="A05">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="edge4" edge="1" parent="1" source="A05" target="A10">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="edge5" edge="1" parent="1" source="A10" target="A20">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="edge6" edge="1" parent="1" source="A20" target="A40">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="edge7" edge="1" parent="1" source="A40" target="A45">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="edge8" edge="1" parent="1" source="A45" target="A50">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="edge9" edge="1" parent="1" source="A50" target="endEvent">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+  </root>
+</mxGraphModel>
